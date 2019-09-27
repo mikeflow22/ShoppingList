@@ -15,6 +15,10 @@ class ListTableViewController: UITableViewController {
 
     }
 
+    @IBAction func addListButtonPressed(_ sender: UIBarButtonItem) {
+        
+        //call the  alert Controller function here
+    }
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -18,6 +18,7 @@
 		1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7C233E628400A0FC20 /* ListController.swift */; };
 		1BACAC7F233E664500A0FC20 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */; };
 		1BACAC81233E67A100A0FC20 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */; };
+		1BACAC84233E6B9B00A0FC20 /* ItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC83233E6B9B00A0FC20 /* ItemCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1BACAC7C233E628400A0FC20 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		1BACAC83233E6B9B00A0FC20 /* ItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +120,17 @@
 			children = (
 				1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */,
 				1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */,
+				1BACAC82233E6B7500A0FC20 /* TableViewCell */,
 			);
 			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		1BACAC82233E6B7500A0FC20 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1BACAC83233E6B9B00A0FC20 /* ItemCellTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */,
+				1BACAC84233E6B9B00A0FC20 /* ItemCellTableViewCell.swift in Sources */,
 				1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */,
 				1BACAC81233E67A100A0FC20 /* ItemsTableViewController.swift in Sources */,
 				1BACAC7B233E617900A0FC20 /* Item+Convenience.swift in Sources */,

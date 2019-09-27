@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="B1I-I3-VkO">
             <objects>
-                <tableViewController id="ujk-dE-a6X" sceneMemberID="viewController">
+                <tableViewController id="ujk-dE-a6X" customClass="ListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dMT-Vw-fbi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,23 +45,27 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="PK8-Hs-h5c">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ib-kd-lfX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ib-kd-lfX">
+                            <connections>
+                                <action selector="addListButtonPressed:" destination="ujk-dE-a6X" id="bnv-3X-tnB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fn-xf-Biq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="810" y="-75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Title-->
         <scene sceneID="Ere-pO-UaZ">
             <objects>
-                <tableViewController id="Sbi-xs-heG" sceneMemberID="viewController">
+                <tableViewController id="Sbi-xs-heG" customClass="ItemsTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z4U-wJ-57e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="eKR-qZ-9PP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="eKR-qZ-9PP" customClass="ItemCellTableViewCell" customModule="ShoppingList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eKR-qZ-9PP" id="iuC-aK-RjI">
@@ -77,12 +81,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-vf-hS0">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-vf-hS0">
                                                     <rect key="frame" x="370.5" y="0.0" width="31.5" height="31.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="lCO-vf-hS0" secondAttribute="height" multiplier="1:1" id="afu-t9-gcM"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" image="incomplete"/>
+                                                    <connections>
+                                                        <action selector="checkmarkButtonPressed:" destination="eKR-qZ-9PP" eventType="touchUpInside" id="SMd-VD-akO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -94,6 +101,10 @@
                                         <constraint firstItem="usu-Tk-RFz" firstAttribute="leading" secondItem="iuC-aK-RjI" secondAttribute="leading" constant="6" id="llD-Iu-PIj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkmarkImage" destination="lCO-vf-hS0" id="31H-4E-CiJ"/>
+                                    <outlet property="itemNameLabel" destination="KdK-ZC-NJa" id="kq7-3i-Ynt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -101,10 +112,17 @@
                             <outlet property="delegate" destination="Sbi-xs-heG" id="Gnf-hT-HMS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="Oba-7q-sb7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0rw-d8-Ake">
+                            <connections>
+                                <action selector="addItemButtonPressed:" destination="Sbi-xs-heG" id="Ic8-TA-Gum"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pju-nE-qYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-75"/>
+            <point key="canvasLocation" x="1615.9420289855075" y="-75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c6a-Gq-Y5m">
@@ -123,4 +141,7 @@
             <point key="canvasLocation" x="-110" y="-75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="incomplete" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
 </document>

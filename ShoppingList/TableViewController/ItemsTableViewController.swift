@@ -17,6 +17,8 @@ class ItemsTableViewController: UITableViewController {
 
     }
 
+    @IBAction func addItemButtonPressed(_ sender: UIBarButtonItem) {
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
