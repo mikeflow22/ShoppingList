@@ -3,14 +3,14 @@
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="isComplete" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="shoppingList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingList" inverseName="items" inverseEntity="ShoppingList" syncable="YES"/>
+        <relationship name="shoppingList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="items" inverseEntity="List" syncable="YES"/>
     </entity>
-    <entity name="ShoppingList" representedClassName="ShoppingList" syncable="YES" codeGenerationType="class">
+    <entity name="List" representedClassName="List" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Item" inverseName="shoppingList" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ShoppingList" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="List" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Item" positionX="-54" positionY="0" width="128" height="90"/>
     </elements>
 </model>

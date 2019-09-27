@@ -15,6 +15,7 @@
 		1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC76233E608F00A0FC20 /* CoreDataStack.swift */; };
 		1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */; };
 		1BACAC7B233E617900A0FC20 /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7A233E617900A0FC20 /* Item+Convenience.swift */; };
+		1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7C233E628400A0FC20 /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1BACAC76233E608F00A0FC20 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingList+Convenience.swift"; sourceTree = "<group>"; };
 		1BACAC7A233E617900A0FC20 /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
+		1BACAC7C233E628400A0FC20 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		1BACAC71233E5EB800A0FC20 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1BACAC7C233E628400A0FC20 /* ListController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */,
+				1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */,
 				1BACAC7B233E617900A0FC20 /* Item+Convenience.swift in Sources */,
 				1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */,
 				1BACAC5D233E5E7300A0FC20 /* AppDelegate.swift in Sources */,

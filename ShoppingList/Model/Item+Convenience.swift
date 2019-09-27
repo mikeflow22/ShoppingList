@@ -12,9 +12,9 @@ import CoreData
 extension Item {
     
     //If we are saying  you  cannot create an item without a shopping list, why give it context default value here? Shouldn't the context be the same as the shoppinglist?
-    convenience init(name: String, isComplete: Bool = false, shoppingList: ShoppingList, context: NSManagedObjectContext = CoreDataStack.mainContext) {
+    convenience init(name: String, isComplete: Bool = false, list: List, context: NSManagedObjectContext = CoreDataStack.mainContext) {
         self.init(context: context)
         self.name = name
-        self.shoppingList = shoppingList
+        self.list = list
     }
 }

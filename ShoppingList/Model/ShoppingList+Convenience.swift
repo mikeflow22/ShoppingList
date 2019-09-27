@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-extension ShoppingList {
+extension List {
     convenience init(name: String, items: [Item] = [], context: NSManagedObjectContext = CoreDataStack.mainContext) {
         self.init(context: context)
         self.name = name
