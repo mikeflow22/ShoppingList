@@ -16,6 +16,8 @@
 		1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */; };
 		1BACAC7B233E617900A0FC20 /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7A233E617900A0FC20 /* Item+Convenience.swift */; };
 		1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7C233E628400A0FC20 /* ListController.swift */; };
+		1BACAC7F233E664500A0FC20 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */; };
+		1BACAC81233E67A100A0FC20 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingList+Convenience.swift"; sourceTree = "<group>"; };
 		1BACAC7A233E617900A0FC20 /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
 		1BACAC7C233E628400A0FC20 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		1BACAC72233E5EC100A0FC20 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1BACAC7E233E664500A0FC20 /* ListTableViewController.swift */,
+				1BACAC80233E67A100A0FC20 /* ItemsTableViewController.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -189,10 +195,12 @@
 			files = (
 				1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */,
 				1BACAC7D233E628400A0FC20 /* ListController.swift in Sources */,
+				1BACAC81233E67A100A0FC20 /* ItemsTableViewController.swift in Sources */,
 				1BACAC7B233E617900A0FC20 /* Item+Convenience.swift in Sources */,
 				1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */,
 				1BACAC5D233E5E7300A0FC20 /* AppDelegate.swift in Sources */,
 				1BACAC75233E5EEF00A0FC20 /* ShoppingList.xcdatamodeld in Sources */,
+				1BACAC7F233E664500A0FC20 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
