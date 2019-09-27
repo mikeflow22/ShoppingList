@@ -40,8 +40,8 @@ class ListTableViewController: UITableViewController {
             ListController.shared.delete(list: listToDelete)
             
             //do not  need the following because the NSFRC's delegate methods with handle this
-//            // Delete the row from the data source
-//            tableView.deleteRows(at: [indexPath], with: .fade)
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 
