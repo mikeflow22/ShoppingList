@@ -8,7 +8,11 @@
 
 import UIKit
 
+
+
 class ItemCellTableViewCell: UITableViewCell {
+    
+    var item: Item?
 
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var checkmarkImage: UIButton!
