@@ -31,8 +31,8 @@ class ListController {
     }
     
     func createList(name: String) {
-        let newList = List(name: name)
-        checkItemsIn(list: newList)
+         _ = List(name: name)
+//        checkItemsIn(list: newList)
         saveToPersistentStore()
     }
     
@@ -46,25 +46,25 @@ class ListController {
         saveToPersistentStore()
     }
     
-    func checkItemsIn(list: List) {
-        guard let itemCount = list.items?.count else  {
-            print("Error  unwrapping in checkItems  function")
-            return  }
-        switch itemCount {
-        case 0...3:
-            list.isLongList = false
-        case 4...1000:
-            list.isLongList = true
-        default:
-            print("the list is toooooo big")
-        }
-//        return list.items?.count >= 3 ? true : false
-//
-//        if let listItems = list.items?.count {
-//
+//    func checkItemsIn(list: List) {
+//        guard let itemCount = list.items?.count else  {
+//            print("Error  unwrapping in checkItems  function")
+//            return  }
+//        switch itemCount {
+//        case 0...3:
+//            list.isLongList = false
+//        case 4...1000:
+//            list.isLongList = true
+//        default:
+//            print("the list is toooooo big")
 //        }
-//        return listItems.count >= 3 ? true : false
-    }
+////        return list.items?.count >= 3 ? true : false
+////
+////        if let listItems = list.items?.count {
+////
+////        }
+////        return listItems.count >= 3 ? true : false
+//    }
     
     func saveToPersistentStore(){
         do {

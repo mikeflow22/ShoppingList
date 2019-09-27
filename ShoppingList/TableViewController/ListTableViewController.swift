@@ -67,7 +67,12 @@ class ListTableViewController: UITableViewController {
     }
 }
 
-extension ListTableViewController {
+extension ListTableViewController: ItemCellTableViewCellDelegate {
+    func checkmarkValueChanged(cell: UITableViewCell) {
+        <#code#>
+    }
+
+    
     func alert(){
         var listTextField: UITextField!
         let alert = UIAlertController(title: "Add List", message: "Please name the list", preferredStyle: .alert)
