@@ -19,31 +19,26 @@ class ItemsTableViewController: UITableViewController {
 
     @IBAction func addItemButtonPressed(_ sender: UIBarButtonItem) {
         //call alert controller
+        alert()
     }
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return list?.items?.count ?? 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemCellTableViewCell
         guard let item = list?.items?[indexPath.row] as? Item else {
-            print("Error deleting items")
+            print("Error casting items \(#function)")
             return UITableViewCell() }
+        cell.item = item
         // Configure the cell...
 
         return cell
     }
- 
-
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
