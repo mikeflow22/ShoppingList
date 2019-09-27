@@ -14,10 +14,11 @@ class ItemsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = list?.name
     }
 
     @IBAction func addItemButtonPressed(_ sender: UIBarButtonItem) {
+        //call alert controller
     }
     // MARK: - Table view data source
 
@@ -86,4 +87,30 @@ class ItemsTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension ItemsTableViewController {
+    func alert(){
+        var listTextField: UITextField!
+        let alert = UIAlertController(title: "Add Item", message: "Please enter Item", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Item's Name"
+            textField.keyboardType = .alphabet
+            listTextField = textField
+        }
+        
+        let addAction =  UIAlertAction(title: "ADD", style: .default) { (_) in
+            guard let name = listTextField.text, !name.isEmpty else { return }
+            ListController.shared.createList(name: name)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            // do we have to add anything here?
+        }
+        
+        alert.addAction(addAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
+}
 }

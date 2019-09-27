@@ -13,7 +13,6 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.reloadData()
         ListController.shared.fetchedResultsController.delegate = self
     }
     
@@ -24,7 +23,6 @@ class ListTableViewController: UITableViewController {
     @IBAction func addListButtonPressed(_ sender: UIBarButtonItem) {
         //call the  alert Controller function here
         alert()
-//        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -53,11 +51,10 @@ class ListTableViewController: UITableViewController {
             
             //do not  need the following because the NSFRC's delegate methods with handle this
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 
-   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -77,17 +74,12 @@ extension ListTableViewController {
         alert.addTextField { (textField) in
             textField.placeholder = "List Name"
             textField.keyboardType = .alphabet
-            //maybe we need the .text here
             listTextField = textField
         }
         
         let addAction =  UIAlertAction(title: "ADD", style: .default) { (_) in
             guard let name = listTextField.text, !name.isEmpty else { return }
             ListController.shared.createList(name: name)
-//            self.tableView.reloadData()
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
