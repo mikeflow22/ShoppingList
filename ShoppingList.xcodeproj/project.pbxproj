@@ -13,6 +13,7 @@
 		1BACAC67233E5E7500A0FC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BACAC65233E5E7500A0FC20 /* LaunchScreen.storyboard */; };
 		1BACAC75233E5EEF00A0FC20 /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC73233E5EEF00A0FC20 /* ShoppingList.xcdatamodeld */; };
 		1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC76233E608F00A0FC20 /* CoreDataStack.swift */; };
+		1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BACAC68233E5E7500A0FC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BACAC74233E5EEF00A0FC20 /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
 		1BACAC76233E608F00A0FC20 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingList+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				1BACAC73233E5EEF00A0FC20 /* ShoppingList.xcdatamodeld */,
 				1BACAC76233E608F00A0FC20 /* CoreDataStack.swift */,
+				1BACAC78233E60F800A0FC20 /* ShoppingList+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BACAC77233E608F00A0FC20 /* CoreDataStack.swift in Sources */,
+				1BACAC79233E60F800A0FC20 /* ShoppingList+Convenience.swift in Sources */,
 				1BACAC5D233E5E7300A0FC20 /* AppDelegate.swift in Sources */,
 				1BACAC75233E5EEF00A0FC20 /* ShoppingList.xcdatamodeld in Sources */,
 			);
