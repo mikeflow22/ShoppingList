@@ -54,10 +54,10 @@
 		1BACAC5B233E5E7300A0FC20 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				1BACAC6F233E5EA800A0FC20 /* Storyboard */,
 				1BACAC72233E5EC100A0FC20 /* TableViewController */,
 				1BACAC71233E5EB800A0FC20 /* Model Controller */,
 				1BACAC70233E5EB300A0FC20 /* Model */,
-				1BACAC6F233E5EA800A0FC20 /* Storyboard */,
 				1BACAC6E233E5E9C00A0FC20 /* Resources */,
 			);
 			path = ShoppingList;
@@ -324,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
